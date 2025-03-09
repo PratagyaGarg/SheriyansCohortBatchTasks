@@ -4,31 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task  - 2</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Contact us</h1>
-    <form action="/">
-        <label for="name">Name:</label>
+    <h1 id="contact-form-heading">Contact us</h1>
+    <form id="contact-form-container" action="/">
+        <label class="contact-form-labels" for="name">Name:</label>
         <br>
-        <input id= "name" type="text" required>
-        <br>
-        <br>
-        <label for="email">Email : </label>
-        <br>
-        <input required id="email" type="email">
+        <input class="contact-form-input-text" id= "name" type="text" required placeholder="Username">
         <br>
         <br>
-        <label for="phone">Phone Number: </label>
+        <label class="contact-form-labels" for="email">Email : </label>
         <br>
-        <input required id="phone" type="tel" pattern="[0-9]{10}" >
-        <br>
-        <br>
-        <label required for="Message">Message: </label>
-        <br>
-        <textarea name="Message" id="Message" rows="6" cols="30"></textarea>
+        <input class="contact-form-input-text" required id="email" type="email" placeholder="User Email ">
         <br>
         <br>
-        <button type="submit">submit</button>
+        <label class="contact-form-labels" for="phone">Phone Number: </label>
+        <br>
+        <input class="contact-form-input-text" required id="phone" type="tel" pattern="[0-9]{10}" placeholder="Phone Number">
+        <br>
+        <br>
+        <label class="contact-form-labels" required for="Message">Message: </label>
+        <br>
+        <textarea id="textbox" class="contact-form-input-text" name="Message" id="Message" rows="6" cols="30" placeholder="Type Your Message Here..."></textarea>
+        <br>
+        <br>
+        <button id="contact-form-submit-button" type="submit">submit</button>
     </form>
 
     

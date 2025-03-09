@@ -1,0 +1,43 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing:border-box;
+   font-family: montserrat;
+}
+body{
+    background-color: rgb(42, 126, 79);
+}
+
+
+#contact-form-heading{
+    padding: 20px 30px;
+    font-size: 3rem; 
+    font-weight: 700;
+    background-color: whitesmoke;
+    color : rgb(42, 126, 79);
+}
+#contact-form-container{
+    margin-top: 40px;
+    padding: 20px 30px;
+}
+.contact-form-labels{
+    font-size: 1.3rem;
+    color: whitesmoke;
+}
+.contact-form-input-text{
+    width: 40vw;
+    padding: 15px 10px;
+    border-radius: 50px;
+    border: none;
+}
+#textbox{
+    border-radius: 20px;
+}
+#contact-form-submit-button{
+    padding: 10px 60px;
+    font-size: 1.4rem;
+    color:rgb(42, 126, 79);
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+}

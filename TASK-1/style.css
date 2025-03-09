@@ -1,0 +1,76 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing:border-box;
+   font-family: montserrat;
+}
+body{
+    margin:40px;
+}
+main, header, footer{
+    background-color: #F5F5F5;
+}
+header{
+    padding: 14px 0px;
+}
+
+#main-heading{
+    margin: 12px 0px;
+    color: #2A3A4F;
+}
+#navbar{
+    padding: 15px;
+    background-color: #3296D7;
+}
+.navbar-elem{
+    color: white;
+    margin: 0px 13px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+main{
+    padding: 18px 2px;
+    border-bottom-style: dotted;
+    border-top-style: dotted;
+    border-bottom-width: 2px;
+    border-top-width: 2px;
+    border-bottom-color: rgba(0, 0, 0, 0.149);
+    border-top-color: rgba(0, 0, 0, 0.149);
+}
+.blog-page{
+    padding: 26px 10px;
+    color: rgba(0, 0, 0, 0.693);
+    background-color: white;
+    margin-bottom: 25px;
+    border-radius: 5px;
+}
+.blog-page-heading{
+    border-bottom-style: dotted;
+    border-bottom-width: 2px;
+    border-bottom-color: rgba(0, 0, 0, 0.149);
+    line-height: 1.8;
+}
+.blog-page p, .blog-page li{
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin: 20px 0px;
+}
+#blog-1 img{
+    border-radius: 2px;
+}
+.blog-page ul, .blog-page ol{
+    margin-left: 80px;
+}
+footer{
+    margin-top: 30px;
+}
+footer  p {
+    width:100%;
+    background-color: #323232;
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 20px 0px;
+    color : white;
+}
+
