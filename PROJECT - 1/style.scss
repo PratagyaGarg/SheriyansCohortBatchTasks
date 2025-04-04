@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+    background-color: #0E0E0E;
+    color: #DAC5A7;
+}
+@mixin fit-the-image(){
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+@mixin flex-container($cri-hori:center, $cri-ver:stretch){
+    display: flex;
+    align-items: $cri-ver;
+    justify-content: $cri-hori;
+}
+@mixin direction-elem(){
+    @include flex-container(flex-start, center);
+    gap: 0.5rem;
+    button{
+        width: 30px;
+        aspect-ratio: 1/1;
+        padding: 5px;
+        border-radius: 50%;
+        background-color: #232120;
+        border: 1px solid #3a3a3a;
+        img{
+        @include fit-the-image();
+        transform: rotate(25deg);
+
+        }
+    }
+    h4{
+        text-transform: uppercase;
+        font-size: 15px;
+        font-weight: 400;
+    }
+}
+.hero{
+    padding:  2.2rem 1.2rem 0rem 2.2rem;
+
+    .hero-image{
+        width: 65%;
+        max-width:240px;
+        margin: auto;
+
+        img{
+            @include fit-the-image();
+        }
+    }
+
+    h2{
+       font-size: 4rem;
+       font-weight: 300;
+       line-height: 1.1;
+       text-align: center;
+    }
+    p{
+        font-size: 1.1rem;
+        opacity: 0.8;
+        margin: 28px;
+        text-align: center;
+    }
+    .my-services{
+        @include flex-container(center, center);
+        gap: 1rem;
+        margin:40px;
+       a{
+        padding: 8px;
+        background-color: #181716;
+        border: 1px solid rgb(46, 37, 28);
+        border-radius: 50%;
+        img{
+           width: 20px;
+           height: 20px;
+        }
+       }
+       span{
+        font-size: 0.7rem;
+        letter-spacing: 2px;
+       }
+    }
+    
+}
+.page-2{
+    padding: 1rem 1.8rem;
+    .marquee{
+        width: 75%;
+        margin: auto;
+        overflow: hidden;
+        position: relative;
+        @include flex-container(flex-start, center);
+        .marquee-content{
+            @include flex-container(center, center);
+            gap:4.8rem;
+            padding: 0rem 2.4rem;
+            animation: marquee 10s linear infinite both;
+            img{
+                width: 80px;
+            }
+        }
+        &::after{
+            content:"";
+            width:100px;
+            height: 100%;
+            background-image: linear-gradient(to right ,#0e0e0e, transparent);
+            position:absolute;
+            top:0;
+            left: 0;
+        }
+        &::before{
+            content:"";
+            width:100px;
+            height: 100%;
+            background-image: linear-gradient(to right , transparent,#0e0e0e);
+            position:absolute;
+            z-index: 100;
+            top:0;
+            right: 0;
+        }
+    }
+    .cards-container{
+        margin: 5rem 0rem;
+        @include flex-container(center, center);
+        flex-direction: column;
+        gap: 30px;
+        .card{
+            width:100%;
+            padding: 40px;
+            border: 1px solid #3a3a3a8b;
+            background-color: #181716;
+            h5{
+                font-size: 15px;
+                opacity: 0.6;
+                font-weight: 400;
+            }
+            h3{
+                font-size: 24px;
+                font-weight: 300;
+                text-transform: uppercase;
+            }
+            p{
+                font-weight: 300;
+                font-size: 16px;
+                margin: 0.6rem 0rem 1rem 0rem;
+            }
+            div{
+                @include direction-elem();
+            }
+        }
+    }
+}
+.page-3{
+    margin: 0rem 1.8rem;
+    .page-3-head{
+        @include flex-container(center, center);
+        flex-direction: column;
+        gap: 20px;
+        h3{
+            font-size: 36px;
+            font-weight: 300;
+        }
+        div{
+            @include direction-elem();
+        }
+    }
+    .activites{
+        @include flex-container(center , center);
+        flex-direction: column;
+        gap: 15px;
+        margin: 15px 0px;
+        .activity{
+            width: 100%;
+            aspect-ratio:5/4;
+            border: 1px solid rgba(128, 128, 128, 0.316);
+            img{
+                @include fit-the-image();
+            }
+        }
+    }
+}
+@keyframes marquee{
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+@media (min-width: 767px){
+    html, body{
+        font-size: 20px;
+    }
+    .hero{
+        .hero-image{
+            max-width: 400px;
+        }
+    }
+
+    .page-3{
+        .page-3-head{
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .activites{
+            flex-direction: row;
+        }
+    }
+}
+@media(min-width: 1200px){
+    html,body{
+        font-size: 30px;
+    }
+    .hero{
+        .hero-image{
+            max-width: 500px;
+        }
+        p{
+            font-size:0.8rem;
+        }
+    }
+    .page-2{
+        .cards-container{
+            flex-direction: row;
+        }
+    }
+
+}
