@@ -199,11 +199,9 @@ html, body {
   font-weight: 400;
 }
 .page-3 .activites {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 15px;
+  display: grid;
+  grid-template-areas: "a" "a" "c" "d";
+  grid-gap: 15px;
   margin: 15px 0px;
 }
 .page-3 .activites .activity {
@@ -216,6 +214,18 @@ html, body {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.page-3 .activites #activity-1 {
+  grid-area: a;
+}
+.page-3 .activites #activity-2 {
+  grid-area: "a";
+}
+.page-3 .activites #activity-3 {
+  grid-area: "a";
+}
+.page-3 .activites #activity-4 {
+  grid-area: "a";
 }
 
 @keyframes marquee {
@@ -238,7 +248,7 @@ html, body {
     justify-content: space-between;
   }
   .page-3 .activites {
-    flex-direction: row;
+    grid-template-areas: "a b" "c d";
   }
 }
 @media (min-width: 1200px) {

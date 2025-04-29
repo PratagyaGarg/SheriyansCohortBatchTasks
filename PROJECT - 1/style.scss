@@ -171,9 +171,13 @@ html, body{
         }
     }
     .activites{
-        @include flex-container(center , center);
-        flex-direction: column;
-        gap: 15px;
+        display: grid;
+        grid-template-areas : 
+             "a"
+             "a"
+             "c"
+             "d"      ;
+        grid-gap: 15px;
         margin: 15px 0px;
         .activity{
             width: 100%;
@@ -183,6 +187,19 @@ html, body{
                 @include fit-the-image();
             }
         }
+        #activity-1{
+            grid-area: ;
+        }
+        #activity-2{
+            grid-area : "a";
+        }
+        #activity-3{
+            grid-area: "a";
+        }
+        #activity-4{
+            grid-area : "a";
+        }
+
     }
 }
 @keyframes marquee{
@@ -209,7 +226,9 @@ html, body{
             justify-content: space-between;
         }
         .activites{
-            flex-direction: row;
+            grid-template-areas: 
+                    "a b"
+                    "c d";
         }
     }
 }
