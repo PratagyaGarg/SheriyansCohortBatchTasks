@@ -1,0 +1,44 @@
+Project - 1 is updated 
+Project - 2 is 
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch main
+# Your branch is up to date with 'origin/main'.
+#
+# Changes to be committed:
+#	modified:   PROJECT - 1/index.html
+#	modified:   PROJECT - 1/style.css
+#	modified:   PROJECT - 1/style.css.map
+#	modified:   PROJECT - 1/style.scss
+#	new file:   PROJECT-2/.gitignore
+#	new file:   PROJECT-2/README.md
+#	new file:   PROJECT-2/eslint.config.js
+#	new file:   PROJECT-2/index.html
+#	new file:   PROJECT-2/package-lock.json
+#	new file:   PROJECT-2/package.json
+#	new file:   PROJECT-2/public/Biscuits.jpg
+#	new file:   PROJECT-2/public/BurjKhalifa.jpg
+#	new file:   PROJECT-2/public/IndiaGate.jpg
+#	new file:   PROJECT-2/public/arrow.png
+#	new file:   PROJECT-2/public/bgdots.png
+#	new file:   PROJECT-2/public/css.png
+#	new file:   PROJECT-2/public/html.png
+#	new file:   PROJECT-2/public/js.png
+#	new file:   PROJECT-2/public/mainImage.jpg
+#	new file:   PROJECT-2/public/tech.png
+#	new file:   PROJECT-2/public/vsCode.png
+#	new file:   PROJECT-2/src/App.css
+#	new file:   PROJECT-2/src/App.jsx
+#	new file:   PROJECT-2/src/Components/Header/Navbar.jsx
+#	new file:   PROJECT-2/src/Components/Main/MainDetails.jsx
+#	new file:   PROJECT-2/src/Components/Main/MainImage.jsx
+#	new file:   PROJECT-2/src/Components/Main/Quote.jsx
+#	new file:   PROJECT-2/src/Components/Main/Skills.jsx
+#	new file:   PROJECT-2/src/Components/Main/Work.jsx
+#	new file:   PROJECT-2/src/Components/Main/WorkComponents/Heading.jsx
+#	new file:   PROJECT-2/src/Components/Main/WorkComponents/Works.jsx
+#	new file:   PROJECT-2/src/index.css
+#	new file:   PROJECT-2/src/main.jsx
+#	new file:   PROJECT-2/vite.config.js
+#
